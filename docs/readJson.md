@@ -45,7 +45,7 @@ example()
 
 ---
 
-`readJson()` can take a `throws` option set to `false` and it won't throw if the JSON is invalid. Example:
+`readJson()` can take a `throws` option set to `false`; it returns `null` instead of throwing if it cannot read the file or parse its JSON. Example:
 
 ```js
 const fs = require('fs-extra')
